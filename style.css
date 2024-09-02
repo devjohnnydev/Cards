@@ -5,7 +5,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f0f0f0;
+    background-color: #e0f7fa; /* Cor de fundo suave */
 }
 
 .card {
@@ -28,9 +28,9 @@ body {
     height: 100%;
     position: absolute;
     backface-visibility: hidden;
-    background: white;
+    background: #ffffff; /* Cor branca */
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra mais pronunciada */
     padding: 20px;
     box-sizing: border-box;
 }
@@ -43,6 +43,7 @@ body {
 }
 
 .card-front h2 {
+    color: #00796b; /* Título em verde escuro */
     margin-bottom: 20px;
 }
 
@@ -50,7 +51,7 @@ body {
     width: 100%;
     margin-bottom: 10px;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #b0bec5; /* Borda em cinza claro */
     border-radius: 5px;
 }
 
@@ -59,9 +60,14 @@ body {
     width: 100%;
     border: none;
     border-radius: 5px;
-    background-color: #007BFF;
+    background-color: #00796b; /* Botão em verde escuro */
     color: white;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card-front button:hover {
+    background-color: #004d40; /* Cor mais escura ao passar o mouse */
 }
 
 .card-back {
@@ -69,12 +75,29 @@ body {
     overflow-y: auto;
 }
 
-.card-back p {
-    margin: 0;
+.card-back h2 {
+    color: #00796b; /* Título em verde escuro */
+    margin-bottom: 20px;
 }
 
-.card-back h2 {
-    margin-bottom: 20px;
+.card-back p {
+    margin: 0;
+    color: #37474f; /* Texto em cinza escuro */
+}
+
+.card-back button {
+    margin-top: 20px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #00796b; /* Botão em verde escuro */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card-back button:hover {
+    background-color: #004d40; /* Cor mais escura ao passar o mouse */
 }
 
 .card-flip {
